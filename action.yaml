@@ -1,0 +1,55 @@
+name: 'BMC Create Server'
+description: ''
+
+branding:
+  icon: arrow-up-circle
+  color: blue
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+
+inputs:
+  clientid:
+    description: 'Client ID from application OAuth2 credentials.'
+    required: true
+  clientsecret:
+    description: 'Client Secret from application OAuth2 credentials.'
+    required: true
+
+  hostname:
+    description: 'Hostname of server. 1 ≤ length ≤ 100 matches ^(?=.*[a-zA-Z])([a-zA-Z0-9().-])+$'
+    required: true
+  image:
+    description: 'The server’s OS ID.'
+    required: false 
+    default: 'ubuntu/bionic'
+  type:
+    description: 'Server type ID.'
+    required: false
+    default: 's1.c1.small'
+  location:
+    description: 'Server Location ID. Cannot be changed once a server is created. Currently this field should be set to PHX or ASH.'
+    required: false
+    default: 'PHX'
+
+
+  bmcentrypoint:
+    description: 'The BMC API entrypoint.'
+    required: false
+    default: 'https://api.phoenixnap.com/bmc/v1/'
+  bmctokenhost:
+    description: 'The BMC OIDC token host.'
+    required: false
+    default: 'https://auth.phoenixnap.com'
+  bmctokenpath:
+    description: 'The BMC OIDC token path.'
+    required: false
+    default: '/auth/realms/BMC/protocol/openid-connect/token'
+
+
+outputs:
+  id:
+    description: 'The new BMC server ID.'
+  ipaddresses: 
+    description: 'A comma separated list of public IP address attached to the new server.'

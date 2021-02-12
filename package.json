@@ -1,0 +1,26 @@
+{
+  "name": "bmc-createserver-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixnap/bmc-createserver-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/phoenixnap/bmc-createserver-github-action/issues"
+  },
+  "homepage": "https://github.com/phoenixnap/bmc-createserver-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "axios": "^0.21.1",
+    "simple-oauth2": "^4.2.0"
+  }
+}
