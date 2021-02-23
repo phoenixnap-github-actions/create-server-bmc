@@ -36,7 +36,6 @@ This action exercises a PhoenixNAP BMC API and requires valid client credentials
     clientid: ${{secrets.BMC_CLIENT_ID}}
     clientsecret: ${{secrets.BMC_CLIENT_SECRET}}
     hostname: "ghatest1"
-    sshkeyids: "Testing.local"
     image: "ubuntu/bionic"
     location: "PHX"
     type: "s1.c1.small"
