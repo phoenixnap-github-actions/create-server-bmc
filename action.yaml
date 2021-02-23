@@ -32,6 +32,10 @@ inputs:
     description: 'Server Location ID. Cannot be changed once a server is created. Currently this field should be set to PHX or ASH.'
     required: false
     default: 'PHX'
+  description:
+    description: 'A description for the server resource.'
+    required: false
+    default: 'A server created via GitHub Actions.'
 
 
   bmcentrypoint:
