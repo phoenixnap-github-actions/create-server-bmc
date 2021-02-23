@@ -4,7 +4,7 @@ This action creates a new server in the PhoenixNAP Bare Metal Cloud platform, an
 
 ## Required inputs
 
-- `clientid`: 'Client ID from application OAuth2 credentials.
+- `clientid`: Client ID from application OAuth2 credentials.
 - `clientsecret`: Client Secret from application OAuth2 credentials.
 - `hostname`: Hostname of server. 1 ≤ length ≤ 100 matches `^(?=.*[a-zA-Z])([a-zA-Z0-9().-])+$`
 
