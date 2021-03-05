@@ -48,7 +48,7 @@ GitHub action for creating a new <a href="https://phoenixnap.com/bare-metal-clou
 
 ## Secrets the action uses
 
-Follow these steps to get the values for the clientid and clientsecret:
+Follow these steps to get the values for the `clientid` and `clientsecret`:
 
 1. [Log in to the Bare Metal Cloud portal](https://bmc.phoenixnap.com).
 2. On the left side menu, click on API Credentials.
