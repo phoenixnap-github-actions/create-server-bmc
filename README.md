@@ -64,7 +64,7 @@ Bare Metal Cloud Quick Start Guide: [https://developers.phoenixnap.com/quick-sta
 
 ```yaml
 - name: CreateServer step
-  uses: phoenixnap/bmc-createserver-github-action 
+  uses: phoenixnap-github-actions/create-server-bmc 
   id: createserver
   with:
     clientid: ${{secrets.BMC_CLIENT_ID}}
